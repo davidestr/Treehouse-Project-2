@@ -7,34 +7,93 @@
   <title>Treehouse Responsive Design Project</title>
   <meta name="viewport" content="width=320, initial-scale=1">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
-  <header>
-    <h1>
-      DAVIDE STRINGANO
-    </h1>
-
-    <nav>
-      <ul>
-        <li><a href="@container">HOME</a></li>
-        <li><a href="@info_profile">PORTFOLIO</a></li>
-        <li><a href="@contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <div class="container">
-    <div class="profile">
+    <header id="home">
+      <h1 class="title">
+        Student Name
+      </h1>
+
+      <nav class="menu">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="profile">
+      <img src="images/responsive-layout-profile.png" alt="photo profile"/>
+      <p>Hi! I'm front-end developer who loves responsive design and css.
+         I recently finished a degree in front-end web development at Treehouse
+         and am excited to put all my sckill to use!
+      </p>
     </div>
 
-    <div class="info_profile">
+    <div class="portfolio">
+      <div class="marketing">
+        <img src="images/portfolio-1.png" alt="marketing images"/>
+        <h3>Marketing Page</h3>
+        <p>This Project shows the front page of a marketing website
+           meant for a specific business I'm interested in.</p>
+      </div>
+
+      <div class="search">
+        <img src="images/portfolio-2.png" alt="search page images"/>
+        <h3>Search Page</h3>
+        <p>This Project shows through a specific database to find information
+           that the user is tryng to look up.</p>
+      </div>
+
+      <div class="travel">
+        <img src="images/portfolio-3.png" alt="travel images"/>
+        <h3>Travel Page</h3>
+        <p>This Project compares travel times based on diffferent trasportation
+           methods and tells you the best one.</p>
+      </div>
+
+      <div class="map">
+        <img src="images/portfolio-4.png" alt="map of favorite spots images"/>
+        <h3>Map of Favorite Spots Page</h3>
+        <p>This Project uses mapping apins to pilot point for my favorite Spots
+           in the city for a do-to-yourself walking tour.</p>
+      </div>
+
+
+      <div class="gallery">
+        <img src="images/portfolio-5.png" alt="photo gallery images"/>
+        <h3>Photo Gallery</h3>
+        <p>This Project shows picture from a recent trip to the viewer and allows
+           them to easily navigate through photos.</p>
+      </div>
+
+      <div class="calculator">
+        <img src="images/portfolio-6.png" alt="calculator images"/>
+        <h3>Calculator</h3>
+        <p>Someone can enter in the numbers they want, and press the big blue
+            button and get the result</p>
+      </div>
     </div>
+
+
+    <div id="contact">
+      <h3>CONTACT</h3>
+      <p>if you're interested in chatting or want more information about what
+         I've been working on, I'd love to hear from you!</p><br/>
+      Phone <a href="tel:+11115551234">(111) 555-1234</a><br/>
+      Email <a href="mailto: email@yoursite.com">email@yoursite.com</a>
+    </div>
+
+    <footer>
+      <h3>Student name</h3>
+      <a href="#home">BACK TO TOP</a>
+    </footer>
   </div>
-
-  <footer class="contact">
-  </footer>
 
 
 

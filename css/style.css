@@ -1,14 +1,82 @@
 body {
-  width: 320px;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
 }
 
 .container {
-  margin: auto;
   background-color: #fafafa;
 }
 
+#profile p {
+  font-size: 1em;
+  text-align: center;
+  color: #a5a5a5;
+  padding: 20px 5px 15px 5px;
+  letter-spacing: 0.8px;
+  line-height: 23px;
+}
+
+h3 {
+  padding: 20px 0;
+  margin: 0;
+}
+
+/* HEADER */
+
 .title {
+  font-size: 2em;
+  color: #4a4a4a;
   margin-top: 0;
+  margin-bottom: 0;
   padding: 1em;
   text-align: center;
+}
+
+/* NAVIGATION BAR */
+
+.menu {
+  margin-bottom: 3em;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0 1em;
+  padding: 0;
+
+}
+
+.menu ul li {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+
+/* MAIN CONTENT */
+
+#profile {
+  margin-bottom: 20px;
+}
+
+#profile img {
+  width: 200px;
+  margin: 0 20%;
+}
+
+/* PORTFOLIO CONTENT */
+
+#portfolio {
+  background-color: #fff;
+  text-align: center;
+}
+
+#portfolio p {
+  font-size: 13px;
+}
+
+.images {
 }

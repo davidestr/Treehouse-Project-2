@@ -34,7 +34,7 @@ hr {
 .container {
   background-color: #fafafa;
   text-align: center;
-  width: 320px;
+  min-width: 320px;
 }
 
 /* HEADER */
@@ -92,8 +92,10 @@ hr {
   margin-top: 10px;
 }
 
+/* FOOTER CONTENT */
+
 footer {
-  width: 100%;
+  /*width: 100%; */
   font-size: 1em;
   padding: 40px 10px;
 }

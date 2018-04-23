@@ -5,7 +5,7 @@
   <meta charset="utf-8">
 
   <title>Treehouse Responsive Design Project</title>
-  <meta name="viewport" content="width=320, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -15,13 +15,11 @@
 </head>
 
 <body>
-  <div class="container">
-    <header id="home">
-      <h1 class="title">
-        Student Name
-      </h1>
+  <div class="wraper">
+    <header class="main-header" id="home">
+      <h1 class="name">Student Name</h1>
 
-      <nav class="menu">
+      <nav class="main-nav">
         <ul>
           <li><a href="#home">HOME</a></li>
           <li><a href="#portfolio">PORTFOLIO</a></li>
@@ -30,77 +28,73 @@
       </nav>
     </header>
 
-    <div id="profile">
+    <div class="primary-content" id="profile">
       <img src="images/responsive-layout-profile.png" alt="photo profile"/>
       <p>Hi! I'm front-end developer who loves responsive design and css.
          I recently finished a degree in front-end web development at Treehouse
          and am excited to put all my sckill to use!
       </p>
     </div>
+  </div>
 
-    <div id="portfolio">
-      <h5>PORTFOLIO</h5>
-      <div class="marketing col">
-        <img  class="images" src="images/portfolio-1.png" alt="marketing images"/>
-        <h3>Marketing Page</h3>
-        <p>This Project shows the front page of a marketing website
-           meant for a specific business I'm interested in.</p>
-      </div>
+    <div class="container" id="portfolio">
+        <h3 class="second-title">PORTFOLIO</h3>
 
-      <div class="search col">
-        <img class="images" src="images/portfolio-2.png" alt="search page images"/>
-        <h3>Search Page</h3>
-        <p>This Project shows through a specific database to find information
-           that the user is tryng to look up.</p>
-      </div>
+          <img src="images/portfolio-1.png" alt="marketing images"/>
+          <h3>Marketing Page</h3>
+          <p>This Project shows the front page of a marketing website
+             meant for a specific business I'm interested in.</p>
 
-      <div class="travel col">
-        <img class="images" src="images/portfolio-3.png" alt="travel images"/>
-        <h3>Travel Page</h3>
-        <p>This Project compares travel times based on diffferent trasportation
-           methods and tells you the best one.</p>
-      </div>
+          <img src="images/portfolio-2.png" alt="search page images"/>
+          <h3>Search Page</h3>
+          <p>This Project shows through a specific database to find information
+             that the user is tryng to look up.</p>
 
-      <div class="map col">
-        <img class="images" src="images/portfolio-4.png" alt="map of favorite spots images"/>
-        <h3>Map of Favorite Spots Page</h3>
-        <p>This Project uses mapping apins to pilot point for my favorite Spots
-           in the city for a do-to-yourself walking tour.</p>
-      </div>
+          <img src="images/portfolio-3.png" alt="travel images"/>
+          <h3>Travel Page</h3>
+          <p>This Project compares travel times based on diffferent trasportation
+             methods and tells you the best one.</p>
 
+          <img src="images/portfolio-4.png" alt="map of favorite spots images"/>
+          <h3>Map of Favorite Spots Page</h3>
+          <p>This Project uses mapping apins to pilot point for my favorite Spots
+             in the city for a do-to-yourself walking tour.</p>
 
-      <div class="gallery col">
-        <img class="images" src="images/portfolio-5.png" alt="photo gallery images"/>
-        <h3>Photo Gallery</h3>
-        <p>This Project shows picture from a recent trip to the viewer and allows
-           them to easily navigate through photos.</p>
-      </div>
+          <img  src="images/portfolio-5.png" alt="photo gallery images"/>
+          <h3>Photo Gallery</h3>
+          <p>This Project shows picture from a recent trip to the viewer and allows
+             them to easily navigate through photos.</p>
 
-      <div class="calculator col">
-        <img class="images" src="images/portfolio-6.png" alt="calculator images"/>
-        <h3>Calculator</h3>
-        <p>Someone can enter in the numbers they want, and press the big blue
-            button and get the result</p>
-      </div>
+          <img src="images/portfolio-6.png" alt="calculator images"/>
+          <h3>Calculator</h3>
+          <p>Someone can enter in the numbers they want, and press the big blue
+              button and get the result</p>
+
     </div>
 
-
-    <div id="contact">
-      <h5>CONTACT</h5>
+  <div class="wraper">
+    <div class="secondary-content" id="contact">
+      <h3 class="second-title">CONTACT</h3>
       <p>if you're interested in chatting or want more information about what
-         I've been working on, I'd love to hear from you!</p><br/>
+         I've been working on, I'd love to hear from you!</p>
       <p>Phone <a href="tel:+11115551234">(111) 555-1234</a><br/></p>
       <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
     </div>
 
+
     <hr>
-    <footer>
-      <h5>Student name</h5>
-      <a href="#home">BACK TO TOP</a>
+    <footer class="main-footer">
+      <h1 class="name" >Student Name</h1>
+      <a id="back-top" href="#home">BACK TO TOP</a>
+
+      <nav class="nav-footer">
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
     </footer>
   </div>
-
-
-
 </body>
 </html>

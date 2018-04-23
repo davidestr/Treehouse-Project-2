@@ -1,113 +1,156 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  background-color: #fafafa;
+  line-height: 1.3;
+  color: #c1bfbf;
 }
 
 a {
+  color: #908f8f;
   text-decoration: none;
-  color: #4a4a4a;
 }
 
-h3 {
-  padding: 20px 0 0 0;
-  margin: 0;
-  color: #4a4a4a;
+ul {
+  list-style-type: none;
 }
 
-h5 {
-  color: #4a4a4a;
-  padding: 30px 0;
-  margin: auto;
+img {
+  width: 100%;
+  height: auto;
 }
 
-p {
-  width: 90%;
+.wraper {
+  padding: 2em;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+.name, h3 {
+  color: #908f8f;
+}
+
+.second-title {
   font-size: 1em;
-  color: #a5a5a5;
-  padding: 20px 5px 15px 5px;
-  margin:auto;
+  margin-top: 0;
 }
 
-hr {
-  width: 90%;
+/* ---- Navigation ---- */
+
+.main-nav ul {
+  padding: 0;
+}
+
+/* ---- Layout Containers ---- */
+
+.primary-content {
+    padding-top: 1em;
+}
+
+.primary-content p {
+  margin-bottom: 0;
 }
 
 .container {
-  background-color: #fafafa;
+  background: #fff;
+  padding: 2em 1em;
   text-align: center;
-  min-width: 320px;
 }
 
-/* HEADER */
+.secondary-content {
+  text-align: center;
+}
 
-.title {
-  font-size: 2em;
-  color: #4a4a4a;
+.secondary-content p {
   margin-top: 0;
-  margin-bottom: 0;
-  padding: 1em 0;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 320px) {
+
+  .wraper {
+    text-align: center;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .container img {
+    margin-top: 1em;
+  }
+
+  .main-nav a {
+    display: block;
+  }
+
+  .main-nav li {
+    background: #fff;
+    padding: 0.7em;
+    margin-top: 5px;
+  }
+
+  .nav-footer {
+    display: none;
+  }
+
+  .main-footer h1 {
+    font-size: 1em;
+    float: left;
+  }
+
+  .main-footer a {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .main-nav ul{
+  }
+
+  .main-nav li {
+    display: inline-block;
+    background: none;
+  }
+
+  .primary-content {
+    display: inline-block;
+    font-size: 1.4em;
+    text-align: justify;
+  }
+
+  .primary-content img {
+    width: 40%;
+    float:right;
+    margin-left: 1em;
+  }
+
+  .container {
+    display: inline-block;
+    float: left;
+  }
 
 }
 
-/* NAVIGATION BAR */
+/* =================================
+  clearfix
+==================================== */
 
-.menu {
-  width: 90%;
-  margin: auto;
-}
-
-.menu ul {
-  list-style-type: none;
-  padding: 0;
-
-}
-
-.menu ul li {
-  padding: 10px;
-  margin-bottom: 5px;
-  background-color: #fff;
-}
-
-/* MAIN CONTENT */
-
-#profile {
-  margin: 50px 0;
-}
-
-#profile img {
-  width: 70%;
-}
-
-/* PORTFOLIO CONTENT */
-
-#portfolio {
-  background-color: #fff;
-}
-
-#portfolio p {
-  margin-bottom: 10px;
-}
-
-.images {
-  width: 90%;
-  margin-top: 10px;
-}
-
-/* FOOTER CONTENT */
-
-footer {
-  /*width: 100%; */
-  font-size: 1em;
-  padding: 40px 10px;
-}
-
-footer h5 {
-  float: left;
-  padding:0;
-  margin:0;
-}
-
-footer a {
-  float: right;
-  padding:0;
-  margin:0;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }

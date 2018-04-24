@@ -102,7 +102,7 @@ img {
     margin-top: 5px;
   }
 
-  .nav-footer {
+  #nav-footer {
     display: none;
   }
 
@@ -117,9 +117,6 @@ img {
 }
 
 @media (min-width: 768px) {
-
-  .main-nav ul{
-  }
 
   .main-nav li {
     display: inline-block;
@@ -140,8 +137,56 @@ img {
 
   .container {
     display: inline-block;
+  }
+
+  .col {
+    width: 50%;
+    float: left;
+    margin-bottom: 2em;
+  }
+
+  .col img {
+    width: 95%;
+  }
+
+  .col p {
+    padding: 0 2em;
+  }
+
+  #back-top, hr {
+    display: none;
+  }
+
+  #nav-footer {
+    display: inline-block;
+    float: right;
+  }
+
+  #nav-footer li {
+
+    margin: 0;
+    padding:0 0 0 0.7em;
+  }
+  #nav-footer ul {
+
+    margin: 0;
+    padding: 0;
+  }
+
+  /* .nav-footer {
+    display: inline-block;
+    float: right;
+  }
+
+  .nav-footer li{
     float: left;
   }
+
+  .nav-footer a {
+    padding: 0 1em;
+  } */
+
+
 
 }
 

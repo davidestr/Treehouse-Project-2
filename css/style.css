@@ -87,6 +87,7 @@ img {
   }
 
   .container {
+    display: inline-block;
     margin: 0 auto;
   }
 
@@ -133,6 +134,7 @@ img {
     margin-top: 0;
     font-size: 1.4em;
     text-align: justify;
+    padding-left: 1em;
   }
 
   .primary-content img {
@@ -142,14 +144,24 @@ img {
   }
 
   .container {
-    display: inline-block;
+    display: flex;
+	  flex-wrap: wrap;
+   	justify-content: center;
   }
 
   .col {
+    display: inline-block;
     width: 50%;
-    height: auto;
-    float: left;
-    margin-bottom: 2em;
+    margin-right: -4px;
+    vertical-align: top;
+    padding-left: 1em;
+		padding-right: 1em;
+    /*height: auto;
+    margin-bottom: 2em;*/
+  }
+
+  .second-title {
+    width: 100%;
   }
 
   .col img {
@@ -180,6 +192,13 @@ img {
     padding: 0;
   }
 
+  .secondary-content p {
+    width: 50%;
+    font-size: 1.3em;
+    margin: 0 auto;
+    padding-bottom: 1em;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -187,6 +206,16 @@ img {
   .name {
     font-size: 1.5em;
     float:left;
+  }
+
+  #first-name {
+    padding-left: 1em;
+  }
+
+  #profile-image {
+    width: 35%;
+    height: auto;
+    padding-right: 1em;
   }
 
   .main-nav {
@@ -210,6 +239,9 @@ img {
   }
 
   .container {
+    display: flex;
+	  flex-wrap: wrap;
+   	justify-content: center;
     margin-left: 2em;
     margin-right: 2em;
   }
@@ -219,11 +251,8 @@ img {
     height: auto;
   }
 
-  .secondary-content p {
-    width: 50%;
-    font-size: 1.3em;
-    margin: 0 auto;
-    padding-bottom: 1em;
+  .second-title {
+    width: 100%;
   }
 
   #nav-footer li{
